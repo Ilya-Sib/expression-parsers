@@ -1,2 +1,2 @@
-# expression-parser
-Arithmetic expression parser
+# expression-parsers
+Parser of arithmetic expressions in different languages
