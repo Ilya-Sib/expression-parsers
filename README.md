@@ -1,4 +1,12 @@
 # Парсеры
+
+## Языки
+
+* [Java](#java)  
+* [JavaScript](#javascript)  
+* [Clojure](#clojure)  
+* [Prolog](#prolog)  
+
 ## [Java](https://github.com/Ilya-Sib/expression-parsers/tree/main/JavaGenericParser/src/expression)
 ### Задание
 
@@ -132,7 +140,7 @@ public interface Tabulator {
         * `mod` – взятие по модулю, приоритет как у умножения (`1 + 5 mod 3` равно `1 + (5 mod 3)` равно `3`).
     * [Исходный код тестов](https://www.kgeorgiy.info/git/geo/paradigms-2021/src/branch/master/java/expression/generic/GenericAsmUlsTest.java)
 
-## [JavaStript](https://github.com/Ilya-Sib/expression-parsers/tree/main/JSPrefixSuffixParser)
+## [JavaScript](https://github.com/Ilya-Sib/expression-parsers/tree/main/JSPrefixSuffixParser)
 ### Задание
 
 Разработайте классы `Const, Variable, Add, Subtract, Multiply, Divide, Negate` для представления выражений с одной переменной.
