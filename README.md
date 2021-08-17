@@ -195,3 +195,31 @@ new Subtract(
 ```
 должно возвращать ((2 * x) - 3).
 Функции разбора должны базироваться на библиотеке комбинаторов, разработанной на лекции.
+
+## [Prolog](https://github.com/Ilya-Sib/expression-parsers/tree/main/PrologDCGParser)
+# Задание
+
+Доработайте правило `(evaluate Expression Varsiables Result)`, вычисляющее арифметические выражения.
+Пример вычисления выражения 2x-3 для x = 5:
+```
+eval(
+    operation(op_subtract,
+        operation(op_multiply,
+            const(2),
+            variable(x)
+        ),
+        const(3)
+    ),
+    [(x, 5)],
+    7
+)
+```                 
+Поддерживаемые операции: сложение `(op_add, +)`, вычитание `(op_subtract, -)`, умножение `(op_multiply, *)`, деление `(op_divide, /)`, противоположное число `(op_negate, negate)`.
+Реализуйте правило `(infix_str Expression Atom)`, разбирающее/выводящее выражения, записанные в полноскобочной инфиксной форме. Например,
+```
+infix_str(
+    operation(op_subtract,operation(op_multiply,const(2),variable(x)),const(3)),
+    '((2 * x) - 3)'
+)
+```
+Правила должны быть реализованы с применением DC-грамматик.
